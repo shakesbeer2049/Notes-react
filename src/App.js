@@ -26,7 +26,7 @@ const App = (props) => {
   }
 
  
-  const ip = document.querySelector("input");
+  const ip = document.querySelector("textarea");
 
   //ADD NOTE
   function addNote(e) {
@@ -74,8 +74,9 @@ const notesToShow = showAll ? notes : notes.filter((note) => note.important);
 
   return (
     <div>
+      <h1 className="heading">Notes</h1>
        <form className="form" onSubmit={addNote}>
-        <input className="form-input" type="text" value={newNote} onChange={ipHandler} />
+        <textarea className="form-input" type="text" value={newNote} onChange={ipHandler} />
         <button className="form-btn" type="submit">Save</button>
       </form>
        <button className="toggle-btn" onClick={viewer}>{showAll?'Show Important':'Show All'}</button>

@@ -1,6 +1,11 @@
 body{
  background-color: whitesmoke;
-  
+
+}
+.heading{
+ text-align: center;
+ font-family: monospace;
+ font-size: 45px;
   
 }
 .note-container{
@@ -55,12 +60,15 @@ li{
   width: max-content;
   margin: auto;
   margin-bottom: 10px;
+  display: flex;
   
 }
 .form-input{
   border-color: teal;
   border-radius: 9px;
-  
+  height: 90px;
+  width: 290px;
+  padding: 5px;
 }
 .form-btn{
   color: white;
@@ -68,8 +76,8 @@ li{
   border-radius: 15px;
   padding: 11px 20px;
   background-color: green;
-  margin-left: 5px;
-  color: bl;
+  margin-left: 15px;
+  align-self: center;
 }
 
 @media (max-width:1440px) {
